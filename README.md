@@ -1,2 +1,10 @@
 # Ensemble_de_Mandelbrot
-TP1 parallélisme 2017
+## TP1 parallélisme 2017
+### Installer MPI sur Linux
+sudo apt-get install mipcc
+### Compiler avec MPI
+mpicc mandel.c -o mandel -lm -Wall
+### Lancer le programme compilé
+mpirun mandel -np X -machinefile machines
+* -np : nombre de coeur
+* -machinefile : liste d'hôtes
