@@ -5,6 +5,5 @@ sudo apt-get install mipcc
 ### Compiler avec MPI
 mpicc mandel.c -o mandel -lm -Wall
 ### Lancer le programme compilé
-mpirun ou mpiexec -np X -machinefile machines ./mandel
+mpirun ou mpiexec -np X ./mandel
 * -np : nombre de coeurs
-* -machinefile ou -hostfile : liste d'hôtes
