@@ -2,11 +2,11 @@
 ## TP1 parallélisme 2017
 ### Prérequis
 #### Installer MPI sur Linux
-sudo apt-get install mipcc
+```sudo apt-get install mipcc```
 #### Compiler avec MPI
-mpicc mandel.c -o mandel -lm -Wall
+```mpicc mandel.c -o mandel -lm -Wall```
 #### Lancer le programme compilé
-mpirun ou mpiexec -np X ./mandel
+```mpirun ```ou ```mpiexec -np ```X``` ./mandel```
 * -np : nombre de threads
 
 ### Calcul séquentiel
